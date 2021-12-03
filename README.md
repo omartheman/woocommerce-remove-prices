@@ -9,6 +9,14 @@ https://omarshishani.com/portfolio-3.0/woocommerce-remove-prices-plugin/
 If that doesn't work, try: 
 https://omarshishani.com/woocommerce-remove-prices-plugin/
 
+View on GitHub: 
+https://github.com/omartheman/woocommerce-remove-prices
+
 NOTES: 
 
 This plugin was created to remove all prices from a WooCommerce WordPress website. It allows users to check out and orders to be placed, without pricing. 
+
+RESOURCES:
+
+Woocommerce docs to check if WC is installed: 
+https://woocommerce.com/document/create-a-plugin/
