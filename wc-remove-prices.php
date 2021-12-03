@@ -1,28 +1,28 @@
 <?php 
 /**
- * Plugin Name: Woocommerce Remove Prices
+ * Plugin Name: WC Remove Prices
  * Plugin URI: https://omarshishani.com/portfolio-3.0/woocommerce-remove-prices-plugin/
- * Description: Remove prices from your Woocommerce store, including the cart, checkout, and customer emails. 
+ * Description: Remove product's prices from your Woocommerce store, including the cart, checkout, and customer emails. 
  * License: GPLv3 
- * License URI: https://opensource.org/licenses/GPL-3.0
- * Version 1.1.0
+ * License URI: https://www.gnu.org/licenses/gpl-3.0.html
+ * Version: 1.1.0
  * Author: Omar Shishani 
  * Author URI: https://omarshishani.com
 */
 
 /*
-Woocommerce Remove Prices is free software: you can redistribute it and/or modify
+WC Remove Prices is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 2 of the License, or
 any later version.
  
-Woocommerce Remove Prices is distributed in the hope that it will be useful,
+WC Remove Prices is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details.
  
 You should have received a copy of the GNU General Public License
-along with Woocommerce Remove Prices. If not, see https://opensource.org/licenses/GPL-3.0.
+along with WC Remove Prices. If not, see https://opensource.org/licenses/GPL-3.0.
 */
 
 /** 
