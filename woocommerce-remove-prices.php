@@ -3,7 +3,7 @@
  * Plugin Name: Woocommerce Remove Prices
  * Plugin URI: None 
  * Description: Remove all mention of pricing from your Woocommerce store, including the cart, checkout, and customer emails. 
- * Version 1.0
+ * Version 1.1.0
  * Author: Omar Shishani 
  * Author URI: https://omarshishani.com
  */
@@ -35,18 +35,13 @@ function woo_adon_plugin_template( $template, $template_name, $template_path ) {
 }
 
 
-// public function needs_payment() {
-//   return apply_filters( 'woocommerce_cart_needs_payment', 0 < $this->get_total( 'edit' ), $this );
-// }
-
-// function example_callback( $example ) {
-//   // Maybe modify $example in some way.
-//   return $example;
-// }
-
 add_filter( 'woocommerce_cart_needs_payment', 'dont_require_payment' );
 
-function dont_require_payment($needs_payment){
+function dont_require_payment($needs_payment){ //Hook into WC filter and set needs_payment boolean to false 
+  /**
+   * We don't want to require payment because all price and payment method fields are omitted via this plugin. 
+   * If payment requirement is not removed, user cannot check out, and gets an error when trying to check out. 
+  */
   $needs_payment = false; //Set the boolean to false, indicating that payment is not required
   return $needs_payment;
 }

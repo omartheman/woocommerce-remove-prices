@@ -4,6 +4,10 @@
 Documentation for functionality to use new template files for WooCommerce: 
 https://wisdmlabs.com/blog/override-woocommerce-templates-plugin/
 
+Plugin Web Page (Plugin URI):
+https://omarshishani.com/portfolio-3.0/woocommerce-remove-prices-plugin/
+If that doesn't work, try: 
+https://omarshishani.com/woocommerce-remove-prices-plugin/
 
 NOTES: 
 
