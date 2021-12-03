@@ -1,21 +1,44 @@
 <?php 
 /**
  * Plugin Name: Woocommerce Remove Prices
- * Plugin URI: None 
- * Description: Remove all mention of pricing from your Woocommerce store, including the cart, checkout, and customer emails. 
+ * Plugin URI: https://omarshishani.com/portfolio-3.0/woocommerce-remove-prices-plugin/
+ * Description: Remove prices from your Woocommerce store, including the cart, checkout, and customer emails. 
+ * License: GPLv3 
+ * License URI: https://opensource.org/licenses/GPL-3.0
  * Version 1.1.0
  * Author: Omar Shishani 
  * Author URI: https://omarshishani.com
- */
+*/
+
+/*
+Woocommerce Remove Prices is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 of the License, or
+any later version.
+ 
+Woocommerce Remove Prices is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+ 
+You should have received a copy of the GNU General Public License
+along with Woocommerce Remove Prices. If not, see https://opensource.org/licenses/GPL-3.0.
+*/
+
+/** 
+ * Documentation for the below code to hook into locate_template filter: 
+ * https://wisdmlabs.com/blog/override-woocommerce-templates-plugin/
+*/
 
 add_filter( 'woocommerce_locate_template', 'woo_adon_plugin_template', 1, 3 );
+
 function woo_adon_plugin_template( $template, $template_name, $template_path ) {
   global $woocommerce;
   $_template = $template;
   if ( ! $template_path ) 
   $template_path = $woocommerce->template_url;
 
-  $plugin_path  = untrailingslashit( plugin_dir_path( __FILE__ ) )  . '/template/woocommerce/';
+  $plugin_path  = untrailingslashit( plugin_dir_path( __FILE__ ) )  . '/templates/woocommerce/';
 
   // Look within passed path within the theme - this is priority
   $template = locate_template(
