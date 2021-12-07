@@ -1,4 +1,4 @@
-=== WC Remove Prices ===
+=== Remove Prices for WooCommerce ===
 License: GPLv3 
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -15,6 +15,9 @@ https://omarshishani.com/woocommerce-remove-prices-plugin/
 
 View on GitHub: 
 https://github.com/omartheman/woocommerce-remove-prices
+
+Plugin Video: 
+https://youtu.be/qiXCHEonPRA
 
 NOTES: 
 
